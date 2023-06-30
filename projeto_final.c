@@ -2,20 +2,12 @@
 #include <stdlib.h>
 #include "projetofinal.h"
 
-void ler_arquivo(Processo *P);
-void imprimir_saida(Processo *p, char *text);
-void schedule_priority(Processo *p);
-void schedule_multiple_queues(Processo *p);
-void print_process(Processo *p, int opc);
-void add_process(Processo *p_fila, Processo *p_buffer);
-void kernel_loop(void);
-
 int main()
 {
 
-    ler_arquivo(fila_proc);
+    ler_arquivo(input_proc);
     printf("processos sem escalonamento\n");
-    print_process(fila_proc, 1);
+    print_process(input_proc, 1);
 
     printf("processos escalonados priority\n");
     // add_process(fila_proc, buffer_proc);
@@ -29,6 +21,30 @@ int main()
     kernel_loop();
 
     return 0;
+}
+
+//inicialização das filas criadas
+void queue_init(Queue *queue) {
+    queue->start_queue = 0;
+    queue->end_queue = 0;
+}
+//verificação se a fila está vazia
+int isEmpty(Queue *queue) {
+    return (queue->end_queue < queue->start_queue);
+}
+//inserindo processos na fila
+void queue_insert(Queue *queue, Processo process) {
+    if (queue->end_queue == MAX_ELEMENTS - 1) {
+        printf("Full queue");
+        return;
+    }
+    queue->processes[++queue->end_queue] = process;
+}
+
+//inicialização do buffer
+void buffer_init(Buffer *buf) {
+    buf->start = 0;
+    buf->end = -1;
 }
 
 //ler os dados do arquivo input.txt
@@ -59,7 +75,7 @@ void imprimir_saida(Processo *p, char *text)
 {
     FILE *o = fopen("output.txt", "w");
     fprintf(o, "%s \n", text);
-    for (int i = 0; i < BUFFER_SIZE; i++)
+    for (int i = 0; i < MAX_BUFFER; i++)
         fprintf(o, "\tp[%d] %d %d \n", p[i].tempo_chegada, p[i].duracao, p[i].prioridade);
 
     //fechando o arquivo de saída output.txt
@@ -69,8 +85,8 @@ void imprimir_saida(Processo *p, char *text)
 void schedule_priority(Processo *p)
 {
     Processo aux;
-    for (int i = 0; i < BUFFER_SIZE; i++) {
-        for (int j = i + 1; j < BUFFER_SIZE; j++) {
+    for (int i = 0; i < MAX_BUFFER; i++) {
+        for (int j = i + 1; j < MAX_BUFFER; j++) {
             if (p[i].prioridade < p[j].prioridade) {
                 //swap
                 aux = p[i];
@@ -97,7 +113,7 @@ void print_process(Processo *p, int opc)
     }
     else
     {
-        for (int i = 0; i < BUFFER_SIZE; i++)
+        for (int i = 0; i < MAX_BUFFER; i++)
         {
             printf("\tp %d %d %d \n", p[i].tempo_chegada, p[i].duracao, p[i].prioridade);
             // printf("======= aqui =======\n");
@@ -105,15 +121,17 @@ void print_process(Processo *p, int opc)
     }
 }
 // adiciona os processos no buffer de acordo com o clock_tick
-void add_process(Processo *p_fila, Processo *p_buffer)
+void add_process(Processo *p_fila, Buffer *p_buffer)
 {
-    for (int i = 0; i < MAX_ELEMENTS; i++)
-    {
-        if ((p_fila[i].tempo_chegada <= clock_tick)&&((end+1) != start))
+    buffer_init(p_buffer);
+
+    for (int i = 0; i < MAX_ELEMENTS; i++) {
+
+        if ((p_fila[i].tempo_chegada <= clock_tick) && ((p_buffer->end+1) % MAX_ELEMENTS != p_buffer->start))
         {
             // printf("adicionando buffer[%d] processo[%d] \n", end, p_fila[i].tempo_chegada);
-            p_buffer[end] = p_fila[i];
-            end = (end + 1) % BUFFER_SIZE;
+            p_buffer->processes[p_buffer->end] = p_fila[i];
+            p_buffer->end = (p_buffer->end + 1) % MAX_BUFFER;
         }
     }
 }
@@ -123,7 +141,7 @@ void kernel_loop(void)
     for (;;)
     {
         clock_tick++;
-        add_process(fila_proc, buffer_proc);
+        add_process(input_proc, buffer_proc);
         // schedule_priority(buffer_proc);
         print_process(buffer_proc, 2);
         printf("--------------------------- clock time %d\n", clock_tick);
