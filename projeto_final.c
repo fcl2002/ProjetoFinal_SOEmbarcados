@@ -4,7 +4,6 @@
 
 int main()
 {
-
     ler_arquivo(input);
     printf("processos sem escalonamento\n");
     print_process(input);
@@ -17,7 +16,7 @@ int main()
     // printf("\nstart = %d, end = %d\n", start, end);
 
     // imprimir_saida(buffer_proc, "processos escalonado");
-
+    
     kernel_loop();
 
     return 0;
@@ -31,7 +30,7 @@ void queue_init(Queue *queue) {
 //inserindo processos na fila
 void queue_insert(Queue *queue, Processo process) {
     if (queue->end == MAX_ELEMENTS - 1) {
-        printf("Full queue");
+        printf("full queue");
         return;
     }
     queue->processes[++queue->end] = process;
@@ -90,30 +89,36 @@ void print_process(Queue *q) {
 }
 // adiciona os processos no buffer de acordo com o clock_tick
 void add_process(Queue *input, Queue *q) {
-
+    //fila está cheia?
     if((q->end+1)%MAX_ELEMENTS == q->start)
-        return; //fila cheia
-
-    for (int i = 0; i < MAX_ELEMENTS; i++)
-        if ((input->processes[i].tempo_chegada <= clock_tick) && ((q->end+1) % MAX_ELEMENTS != q->start) && (input->processes[i].tempo_chegada != -1)) {
+        return;
+    
+    for(int i = 9; i > -1; i--) {
+        //se o processo já chegou e ainda não foi lido
+        if((input->processes[i].tempo_chegada <= clock_tick) && (input->processes[i].tempo_chegada != -1)){
+            printf("\t teste: %d %d %d\n", input->processes[i].tempo_chegada, input->processes[i].duracao, input->processes[i].prioridade);
             q->processes[q->end] = input->processes[i];
             q->end = (q->end + 1) % MAX_ELEMENTS;
 
-            //limpar a posição do input para não interferir na próxima leitura
+            //indicar que o processo já foi lido
             input->processes[i].tempo_chegada = -1;
         }
+        if((q->end+1)%MAX_ELEMENTS == q->start)
+            break; //fila cheia
+    }
 }
 void remove_process(Queue *q) {    
     //executar o primeiro processo da fila e incrementar a variável 'start'
-    printf("\t processo %d executado\n", q->processes[q->start].prioridade);
+    printf("\tprocesso %d executado\n", q->processes[q->start].prioridade);
     clock_tick += q->processes[q->start].duracao;
 
-    q->processes[q->start].prioridade = -1;
+    //q->processes[q->start].prioridade = -1;
     q->start = (q->start+1) % MAX_ELEMENTS;
 }
 //looping infinito
 void kernel_loop(void)
 {
+    clock_tick = 0;
     queue_init(fila_prioridade);
 
     for (;;) {
@@ -121,7 +126,6 @@ void kernel_loop(void)
         add_process(input, fila_prioridade);
 
         print_process(fila_prioridade);
-        printf("add--------------------------- clock time %d\n", clock_tick);
 
         //se a lista não está vazia
         if (fila_prioridade->end  != fila_prioridade->start) {
@@ -130,9 +134,9 @@ void kernel_loop(void)
         }
         else
             clock_tick++;
-
-        print_process(fila_prioridade);
-        printf("rem--------------------------- clock time %d\n", clock_tick);
+            
+        printf("\tstart: %d  end: %d \n", fila_prioridade->start, fila_prioridade->end);
+        printf("add--------------------------- clock time %d\n", clock_tick);
 
         if (clock_tick >= 49)
             break;
