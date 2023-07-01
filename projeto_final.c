@@ -8,14 +8,7 @@ int main()
     printf("processos sem escalonamento\n");
     print_process(input);
 
-    printf("processos escalonados priority\n");
-    // add_process(fila_proc, buffer_proc);
-    // schedule_priority(buffer_proc);
-    // print_process(buffer_proc, 2);
-
-    // printf("\nstart = %d, end = %d\n", start, end);
-
-    // imprimir_saida(buffer_proc, "processos escalonado");
+    printf("processos escalonados prioridade\n");
     
     kernel_loop();
 
@@ -43,12 +36,7 @@ void ler_arquivo(Queue *q) {
 
     if (f == NULL) return;
 
-    if ((q->end + 1) % MAX_ELEMENTS == q->start) {
-        printf("full process list\n");
-        return;
-    }
-
-    for (int i = 0; i < MAX_ELEMENTS; i++) {
+    for (int i = 0; i < 10; i++) {
         //colocar os processos dentro da fila 
         fscanf(f, "%d %d %d", &aux.tempo_chegada, &aux.duracao, &aux.prioridade);
         q->processes[i] = aux;
@@ -93,10 +81,9 @@ void add_process(Queue *input, Queue *q) {
     if((q->end+1)%MAX_ELEMENTS == q->start)
         return;
     
-    for(int i = 9; i > -1; i--) {
+    for(int i = 9; i >= 0; i--) {
         //se o processo já chegou e ainda não foi lido
         if((input->processes[i].tempo_chegada <= clock_tick) && (input->processes[i].tempo_chegada != -1)){
-            printf("\t teste: %d %d %d\n", input->processes[i].tempo_chegada, input->processes[i].duracao, input->processes[i].prioridade);
             q->processes[q->end] = input->processes[i];
             q->end = (q->end + 1) % MAX_ELEMENTS;
 

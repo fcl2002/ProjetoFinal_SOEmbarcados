@@ -23,7 +23,7 @@ void queue_insert(Queue *queue, Processo process);
 
 // O número de processos presentes no arquivo de entrada deverá ter
 // no mínimo o dobro do tamanho do buffer circular.
-Queue input[MAX_ELEMENTS];              // processos vindos do input.txt
+Queue input[10];              // processos vindos do input.txt
 Queue fila_prioridade[MAX_ELEMENTS];    // vetor que sofre escalonamento
 int clock_tick; // controle do quantum
 
