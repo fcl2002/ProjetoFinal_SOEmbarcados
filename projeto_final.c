@@ -70,15 +70,18 @@ void imprimir_saida(Queue *q, char *text)
 //escalonador de prioridade
 void schedule_priority(void *queue) {    
     Queue *q = (Queue*) queue;
+    int i = q->start;
     Processo aux;
-    for (int i = 0; i < MAX_ELEMENTS; i++)
-        for (int j = i + 1; j < MAX_ELEMENTS; j++)
-            if (q->processes[i].prioridade < q->processes[j].prioridade) {
-                //swap
-                aux = q->processes[i];
-                q->processes[i] = q->processes[j];
-                q->processes[j] = aux;
-            }
+
+    while (i != q-> end) {
+        if (q->processes[q->start].prioridade < q->processes[i].prioridade) 
+        {
+            aux = q->processes[q->start];
+            q->processes[q->start] = q->processes[i];
+            q->processes[i] = aux;
+        }
+        i = (i+1) % MAX_ELEMENTS;
+    }
 }
 // printa os procesos da fila
 void print_process(Queue *q) {
@@ -92,7 +95,7 @@ void add_process(Queue *input, Queue *q) {
         return; //fila cheia
 
     for (int i = 0; i < MAX_ELEMENTS; i++)
-        if ((input->processes[i].tempo_chegada <= clock_tick) && ((q->end+1) % MAX_ELEMENTS != q->start) && (input->processes[i].tempo_chegada > -1)) {
+        if ((input->processes[i].tempo_chegada <= clock_tick) && ((q->end+1) % MAX_ELEMENTS != q->start) && (input->processes[i].tempo_chegada != -1)) {
             q->processes[q->end] = input->processes[i];
             q->end = (q->end + 1) % MAX_ELEMENTS;
 
@@ -105,9 +108,8 @@ void remove_process(Queue *q) {
     printf("\t processo %d executado\n", q->processes[q->start].prioridade);
     clock_tick += q->processes[q->start].duracao;
 
-    q->processes[q->start].tempo_chegada = 0;
-    q->processes[q->start].duracao = 0;
-    q->processes[q->start].prioridade = 0;
+    q->processes[q->start].prioridade = -1;
+    q->start = (q->start+1) % MAX_ELEMENTS;
 }
 //looping infinito
 void kernel_loop(void)
@@ -132,8 +134,7 @@ void kernel_loop(void)
         print_process(fila_prioridade);
         printf("rem--------------------------- clock time %d\n", clock_tick);
 
-        if (clock_tick >= 50)
+        if (clock_tick >= 49)
             break;
     }
 }
-

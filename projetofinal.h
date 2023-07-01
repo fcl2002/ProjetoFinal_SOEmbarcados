@@ -2,7 +2,7 @@
 #define PROJETOFINAL_H
 
 #define MAX_QUEUE 3      //máximo de filas
-#define MAX_ELEMENTS 10  //máximo de elementos em cada fila
+#define MAX_ELEMENTS 5  //máximo de elementos em cada fila
 
 //estrutura de processo
 typedef struct Processo {
