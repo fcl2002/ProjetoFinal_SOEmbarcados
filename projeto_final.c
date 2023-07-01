@@ -6,11 +6,12 @@ int main()
 {
     ler_arquivo(input);
     printf("processos sem escalonamento\n");
-    print_process(input);
-
-    printf("processos escalonados prioridade\n");
+    //impressão do vetor input (leitura do input.txt)
+    for (int i = 0; i < 10; i++)
+        printf("\tp %d %d %d \n", input->processes[i].tempo_chegada, input->processes[i].duracao, input->processes[i].prioridade);
     
-    kernel_loop();
+    printf("processos escalonados prioridade\n");
+    kernel_loop(fila_prioridade);
 
     return 0;
 }
@@ -72,7 +73,7 @@ void schedule_priority(void *queue) {
 }
 // printa os procesos da fila
 void print_process(Queue *q) {
-    for (int i = 0; (i < MAX_ELEMENTS); i++)
+    for (int i = 0; i < MAX_ELEMENTS; i++)
         printf("\tp %d %d %d \n", q->processes[i].tempo_chegada, q->processes[i].duracao, q->processes[i].prioridade);
 }
 // adiciona os processos no buffer de acordo com o clock_tick
@@ -94,36 +95,35 @@ void add_process(Queue *input, Queue *q) {
             break; //fila cheia
     }
 }
-void remove_process(Queue *q) {    
+void execute_process(Queue *q) {    
     //executar o primeiro processo da fila e incrementar a variável 'start'
-    printf("\tprocesso %d executado\n", q->processes[q->start].prioridade);
+    printf("> processo %d executado\n", q->processes[q->start].prioridade);
     clock_tick += q->processes[q->start].duracao;
+
+    printf("---------------------------- clock time: %d | start: %d | end: %d\n", clock_tick, q->start, q->end);
 
     //q->processes[q->start].prioridade = -1;
     q->start = (q->start+1) % MAX_ELEMENTS;
 }
 //looping infinito
-void kernel_loop(void)
+void kernel_loop(Queue *q)
 {
     clock_tick = 0;
-    queue_init(fila_prioridade);
+    queue_init(q);
 
     for (;;) {
 
-        add_process(input, fila_prioridade);
+        add_process(input, q);
 
-        print_process(fila_prioridade);
+        print_process(q);
 
         //se a lista não está vazia
-        if (fila_prioridade->end  != fila_prioridade->start) {
-            schedule_priority(fila_prioridade);
-            remove_process(fila_prioridade);
+        if (q->end  != q->start) {
+            schedule_priority(q);
+            execute_process(q);
         }
         else
             clock_tick++;
-            
-        printf("\tstart: %d  end: %d \n", fila_prioridade->start, fila_prioridade->end);
-        printf("add--------------------------- clock time %d\n", clock_tick);
 
         if (clock_tick >= 49)
             break;

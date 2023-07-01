@@ -35,7 +35,7 @@ void schedule_multiple_queues(Processo *p);
 
 void print_process(Queue * q);
 void add_process(Queue *p_fila, Queue *p_buffer);
-void remove_process(Queue *q);
-void kernel_loop(void);
+void execute_process(Queue *q);
+void kernel_loop(Queue *q);
 
 #endif
