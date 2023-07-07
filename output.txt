@@ -1,0 +1,1420 @@
+ -- processos sem escalonamento -- 
+	p 0 10 0 
+	p 1 10 1 
+	p 2 10 2 
+	p 3 10 3 
+	p 4 10 4 
+	p 5 10 5 
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 10 10 10 
+	p 11 10 11 
+	p 12 10 12 
+	p 13 10 13 
+	p 14 10 14 
+	p 15 10 15 
+	p 16 10 16 
+	p 17 10 17 
+	p 18 10 18 
+	p 19 10 19 
+processos escalonados prioridade
+	p 0 10 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+	p 0 0 0 
+> processo 0 executado
+---------------------------- clock time: 10 | start: 0 | end: 1
+processos escalonados prioridade
+	p 0 10 0 
+	p 10 10 10 
+	p 9 10 9 
+	p 8 10 8 
+	p 7 10 7 
+	p 6 10 6 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 10 executado
+---------------------------- clock time: 20 | start: 1 | end: 0
+processos escalonados prioridade
+	p 19 10 19 
+	p 10 10 10 
+	p 9 10 9 
+	p 8 10 8 
+	p 7 10 7 
+	p 6 10 6 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 19 executado
+---------------------------- clock time: 30 | start: 2 | end: 1
+processos escalonados prioridade
+	p 9 10 9 
+	p 18 10 18 
+	p 19 10 19 
+	p 8 10 8 
+	p 7 10 7 
+	p 6 10 6 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 18 executado
+---------------------------- clock time: 40 | start: 3 | end: 2
+processos escalonados prioridade
+	p 8 10 8 
+	p 9 10 9 
+	p 17 10 17 
+	p 18 10 18 
+	p 7 10 7 
+	p 6 10 6 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 17 executado
+---------------------------- clock time: 50 | start: 4 | end: 3
+processos escalonados prioridade
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 16 10 16 
+	p 17 10 17 
+	p 6 10 6 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 16 executado
+---------------------------- clock time: 60 | start: 5 | end: 4
+processos escalonados prioridade
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 15 10 15 
+	p 16 10 16 
+	p 5 10 5 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 15 executado
+---------------------------- clock time: 70 | start: 6 | end: 5
+processos escalonados prioridade
+	p 5 10 5 
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 14 10 14 
+	p 15 10 15 
+	p 4 10 4 
+	p 3 10 3 
+	p 2 10 2 
+> processo 14 executado
+---------------------------- clock time: 80 | start: 7 | end: 6
+processos escalonados prioridade
+	p 4 10 4 
+	p 5 10 5 
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 13 10 13 
+	p 14 10 14 
+	p 3 10 3 
+	p 2 10 2 
+> processo 13 executado
+---------------------------- clock time: 90 | start: 8 | end: 7
+processos escalonados prioridade
+	p 3 10 3 
+	p 4 10 4 
+	p 5 10 5 
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 12 10 12 
+	p 13 10 13 
+	p 2 10 2 
+> processo 12 executado
+---------------------------- clock time: 100 | start: 9 | end: 8
+-----------processos sem escalonamento multiplas ----------------------
+	p 0 10 0 
+	p 1 10 1 
+	p 2 10 2 
+	p 3 10 3 
+	p 4 10 4 
+	p 5 10 5 
+	p 6 10 6 
+	p 7 10 7 
+	p 8 10 8 
+	p 9 10 9 
+	p 10 10 10 
+	p 11 10 11 
+	p 12 10 12 
+	p 13 10 13 
+	p 14 10 14 
+	p 15 10 15 
+	p 16 10 16 
+	p 17 10 17 
+	p 18 10 18 
+	p 19 10 19 
+
+processos escalonados multiplas -- clock[0] start0[0] end0[1] start1[0] end1[0] 
+	fila[0] p 0 10 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[3] start0[1] end0[4] start1[0] end1[1] 
+	fila[0] p 0 0 0 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 1 10 1 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 2 10 2 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 3 10 3 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[6] start0[2] end0[7] start1[0] end1[2] 
+	fila[0] p 0 0 0 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 2 10 2 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 3 10 3 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 4 10 4 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 5 10 5 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 6 10 6 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[9] start0[3] end0[0] start1[0] end1[3] 
+	fila[0] p 0 0 0 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 3 10 3 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 4 10 4 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 5 10 5 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 6 10 6 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 7 10 7 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[12] start0[4] end0[3] start1[0] end1[4] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 4 10 4 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 5 10 5 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 6 10 6 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 7 10 7 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[15] start0[5] end0[4] start1[0] end1[5] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 5 10 5 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 6 10 6 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 7 10 7 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[18] start0[6] end0[5] start1[0] end1[6] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 6 10 6 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 7 10 7 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[21] start0[7] end0[6] start1[0] end1[7] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 7 10 7 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[24] start0[8] end0[7] start1[0] end1[8] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 8 10 8 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[27] start0[9] end0[8] start1[0] end1[9] 
+	fila[0] p 10 10 10 	fila[1] p 0 7 0 	fila[2] p 0 0 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[32] start0[9] end0[8] start1[1] end1[9] 
+	fila[0] p 10 10 10 	fila[1] p 0 0 0 	fila[2] p 0 2 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 9 10 9 	fila[1] p 0 0 0 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[35] start0[0] end0[9] start1[1] end1[0] 
+	fila[0] p 10 10 10 	fila[1] p 0 0 0 	fila[2] p 0 2 0
+	fila[0] p 11 10 11 	fila[1] p 1 7 1 	fila[2] p 0 0 0
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[40] start0[0] end0[9] start1[2] end1[0] 
+	fila[0] p 10 10 10 	fila[1] p 0 0 0 	fila[2] p 0 2 0
+	fila[0] p 11 10 11 	fila[1] p 0 0 0 	fila[2] p 1 2 1
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[43] start0[1] end0[0] start1[2] end1[1] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 11 10 11 	fila[1] p 0 0 0 	fila[2] p 1 2 1
+	fila[0] p 12 10 12 	fila[1] p 2 7 2 	fila[2] p 0 0 0
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[48] start0[1] end0[0] start1[3] end1[1] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 11 10 11 	fila[1] p 0 0 0 	fila[2] p 1 2 1
+	fila[0] p 12 10 12 	fila[1] p 0 0 0 	fila[2] p 2 2 2
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[51] start0[2] end0[0] start1[3] end1[2] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 12 10 12 	fila[1] p 0 0 0 	fila[2] p 2 2 2
+	fila[0] p 13 10 13 	fila[1] p 3 7 3 	fila[2] p 0 0 0
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[56] start0[2] end0[0] start1[4] end1[2] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 12 10 12 	fila[1] p 0 0 0 	fila[2] p 2 2 2
+	fila[0] p 13 10 13 	fila[1] p 0 0 0 	fila[2] p 3 2 3
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[59] start0[3] end0[0] start1[4] end1[3] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 13 10 13 	fila[1] p 0 0 0 	fila[2] p 3 2 3
+	fila[0] p 14 10 14 	fila[1] p 4 7 4 	fila[2] p 0 0 0
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[64] start0[3] end0[0] start1[5] end1[3] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 13 10 13 	fila[1] p 0 0 0 	fila[2] p 3 2 3
+	fila[0] p 14 10 14 	fila[1] p 0 0 0 	fila[2] p 4 2 4
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[67] start0[4] end0[0] start1[5] end1[4] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 14 10 14 	fila[1] p 0 0 0 	fila[2] p 4 2 4
+	fila[0] p 15 10 15 	fila[1] p 5 7 5 	fila[2] p 0 0 0
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[72] start0[4] end0[0] start1[6] end1[4] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 14 10 14 	fila[1] p 0 0 0 	fila[2] p 4 2 4
+	fila[0] p 15 10 15 	fila[1] p 0 0 0 	fila[2] p 5 2 5
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[75] start0[5] end0[0] start1[6] end1[5] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 15 10 15 	fila[1] p 0 0 0 	fila[2] p 5 2 5
+	fila[0] p 16 10 16 	fila[1] p 6 7 6 	fila[2] p 0 0 0
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[80] start0[5] end0[0] start1[7] end1[5] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 15 10 15 	fila[1] p 0 0 0 	fila[2] p 5 2 5
+	fila[0] p 16 10 16 	fila[1] p 0 0 0 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[83] start0[6] end0[0] start1[7] end1[6] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 16 10 16 	fila[1] p 0 0 0 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 7 7 7 	fila[2] p 0 0 0
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[88] start0[6] end0[0] start1[8] end1[6] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 16 10 16 	fila[1] p 0 0 0 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 0 0 0 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[91] start0[7] end0[0] start1[8] end1[7] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 0 0 0 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 8 7 8 	fila[2] p 0 0 0
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[96] start0[7] end0[0] start1[9] end1[7] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 2 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 0 0 0 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 0 0 0 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[101] start0[7] end0[0] start1[9] end1[7] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 17 10 17 	fila[1] p 0 0 0 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 0 0 0 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[104] start0[8] end0[0] start1[9] end1[8] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 0 0 0 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 9 7 9 	fila[2] p 0 0 0
+
+processos escalonados multiplas -- clock[109] start0[8] end0[0] start1[0] end1[8] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 1 2 1
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 0 0 0 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 0 0 0 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[114] start0[8] end0[0] start1[0] end1[8] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 18 10 18 	fila[1] p 0 0 0 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 0 0 0 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[117] start0[9] end0[0] start1[0] end1[9] 
+	fila[0] p 0 0 0 	fila[1] p 10 7 10 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 0 0 0 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[122] start0[9] end0[0] start1[1] end1[9] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 2 2 2
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 0 0 0 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[127] start0[9] end0[0] start1[1] end1[9] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 19 10 19 	fila[1] p 0 0 0 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[130] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 11 7 11 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[131] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 12 7 12 	fila[2] p 0 0 0
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[132] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 13 7 13 	fila[2] p 3 2 3
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[133] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 14 7 14 	fila[2] p 4 2 4
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[134] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 15 7 15 	fila[2] p 5 2 5
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[135] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 16 7 16 	fila[2] p 6 2 6
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[136] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 17 7 17 	fila[2] p 7 2 7
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[137] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 18 7 18 	fila[2] p 8 2 8
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[138] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 19 7 19 	fila[2] p 9 2 9
+
+processos escalonados multiplas -- clock[139] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[140] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[141] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[142] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[143] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[144] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[145] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[146] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[147] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[148] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[149] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[150] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[151] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[152] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[153] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[154] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[155] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[156] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[157] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[158] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[159] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[160] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[161] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[162] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[163] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[164] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[165] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[166] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[167] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[168] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[169] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[170] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[171] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[172] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[173] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[174] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[175] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[176] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[177] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[178] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[179] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[180] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[181] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[182] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[183] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[184] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[185] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[186] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[187] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[188] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[189] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[190] start0[0] end0[0] start1[1] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[191] start0[0] end0[0] start1[2] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[192] start0[0] end0[0] start1[3] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[193] start0[0] end0[0] start1[4] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[194] start0[0] end0[0] start1[5] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[195] start0[0] end0[0] start1[6] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[196] start0[0] end0[0] start1[7] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[197] start0[0] end0[0] start1[8] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[198] start0[0] end0[0] start1[9] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
+
+processos escalonados multiplas -- clock[199] start0[0] end0[0] start1[0] end1[0] 
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 10 2 10
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 11 6 11
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 12 6 12
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 13 6 13
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 14 6 14
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 15 6 15
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 16 6 16
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 17 6 17
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 18 6 18
+	fila[0] p 0 0 0 	fila[1] p 0 0 0 	fila[2] p 19 6 19
